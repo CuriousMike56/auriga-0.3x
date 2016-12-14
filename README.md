@@ -2,6 +2,8 @@
 
 This map was originally for 0.4+, backported to 0.3x.
 
+Original link: http://www.rigsofrods.org/old-forum/forums/172-Dev-Chat/104845/attached-files/auriga-0.4.zip
+
 ##Screenshots:
 
 ![1](http://i.imgur.com/a0KhWbm.png)
