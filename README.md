@@ -11,9 +11,13 @@ This map was originally for 0.4+, backported to 0.3x.
 ##Credits:
 
 terrain = Miura
+
 trees&grass = LJFHutch
+
 textures = LJFHutch, DeGa, AGF81 (Deviantart)
+
 pit_building = Fidoj
+
 backport = Michael10055
 
 ###There is no alpha splatting at the moment, if anyone can figure out how to get it working please make a pull request, thanks!
