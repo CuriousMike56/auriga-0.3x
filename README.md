@@ -22,4 +22,6 @@ pit_building = Fidoj
 
 backport = Michael10055
 
+###If you want the races, rename `31.terrn.as.old` to `31.terrn.as`. Angelscript does not work in 0.39.
+
 ###There is no alpha splatting at the moment, if anyone can figure out how to get it working please make a pull request, thanks!
