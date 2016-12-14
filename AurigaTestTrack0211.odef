@@ -1,0 +1,9 @@
+AurigaTestTrack021.mesh
+1.2, 0.6, 1
+
+beginmesh
+mesh AurigaTestTrack021.mesh
+stdfriction concrete
+endmesh
+
+end

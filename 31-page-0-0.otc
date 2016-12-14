@@ -1,0 +1,9 @@
+31-heightmap.png
+6
+; worldSize, diffusespecular, normalheight, blendmap, blendmapmode, alpha
+3.3  , 31-gravel_diffusespecular.dds , 31-gravel_normalheight.dds
+6    , 31-rock_diffusespecular.dds   , 31-rock_normalheight.dds   , 31-surfaces2.png, B, 0.9
+5    , 31-sand_diffusespecular.dds   , 31-sand_normalheight.dds   , 31-surfaces2.png, G, 0.9
+4    , 31-grass_diffusespecular.dds  , 31-grass_normalheight.dds  , 31-surfaces1.png, G, 0.8
+3    , 31-asphalt_diffusespecular.dds, 31-asphalt_normalheight.dds, 31-surfaces1.png, R, 0.95
+1024 , 31-shadow_diffusespecular.dds , 31-shadow_normalheight.dds , 31-shadow.png   , R, 0.8

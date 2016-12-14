@@ -1,0 +1,210 @@
+material ETTerrainMaterial
+{   
+   technique
+   {
+   
+      pass Ambient
+      {
+		vertex_program_ref ETAmbient_VS
+        {
+        }        
+      }	
+           
+      pass Lighting
+      {
+         scene_blend add
+         iteration once_per_light
+         
+         		 
+         vertex_program_ref ET/Programs/VSDynLightingNM
+         {
+         }
+         
+         fragment_program_ref ET/Programs/PSDynLightingNM
+         {
+			param_named splatScaleX float 192
+           param_named splatScaleZ float 192
+         }
+         
+		 texture_unit
+         {
+        // first coverage map, dynamically managed
+               texture_alias RGBMap1
+            }
+         texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture_alias RGBMap2
+         }
+		 texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture_alias RGBMap3
+         }
+         
+         texture_unit
+         {
+           texture_alias RMap1_NRM
+         }
+         texture_unit
+         {
+           texture_alias GMap1_NRM
+         }
+         texture_unit
+         {
+           texture_alias BMap1_NRM
+         }
+         texture_unit
+         {
+           texture_alias RMap2_NRM
+         }
+         texture_unit
+         {
+           texture_alias GMap2_NRM
+         }
+         texture_unit
+         {
+           texture_alias BMap2_NRM
+         }
+		     texture_unit
+         {
+           texture_alias RMap3_NRM
+         }
+         texture_unit
+         {
+           texture_alias GMap3_NRM
+         }
+         texture_unit
+         {
+           texture_alias BMap3_NRM
+         } 
+         
+      }
+     
+         // primary splatting technique, requires PS 2.0
+	pass Splatting
+    {
+         scene_blend modulate
+                    
+         vertex_program_ref ET/Programs/VSDynLightingNM
+         {
+         }
+         
+         fragment_program_ref ET/Programs/PSDynLightingNM
+         {
+         }          
+         
+         vertex_program_ref ET/Programs/VSLodMorph2
+         {
+         }
+
+         fragment_program_ref ET/Programs/PSSplat2
+         {
+           param_named splatScaleX float 192
+           param_named splatScaleZ float 192
+         }
+
+         texture_unit
+         {
+        // first coverage map, dynamically managed
+               texture_alias RGBMap1
+            }
+         texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture_alias RGBMap2
+         }
+		 texture_unit
+         {
+         // second coverage map, dynamically managed
+               texture_alias RGBMap3
+         }
+
+         // splatting textures
+         texture_unit
+         {
+           texture_alias RMap1_DIF
+         }
+         texture_unit
+         {
+			     texture_alias GMap1_DIF
+         }
+         texture_unit
+         {
+           texture_alias BMap1_DIF
+         }
+         texture_unit
+         {
+           texture_alias RMap2_DIF
+         }
+         texture_unit
+         {
+           texture_alias GMap2_DIF
+         }
+         texture_unit
+         {
+           texture_alias BMap2_DIF
+         }
+		     texture_unit
+         {
+           texture_alias RMap3_DIF
+         }
+         texture_unit
+         {
+           texture_alias GMap3_DIF
+         }
+         texture_unit
+         {
+           texture_alias BMap3_DIF
+         }
+      }    
+      
+      pass
+	  {
+			// colour map
+			scene_blend modulate	
+		     
+		    vertex_program_ref ET/Programs/VSLodMorph3
+			{
+			} 					
+			
+			texture_unit 
+			{			
+				texture_alias Color
+			}					
+			      
+		}   
+		        
+      
+   }
+}
+
+
+material Material : 31TerrainMaterial
+{
+	set_texture_alias RGBMap1		31-surfaces1.png
+	set_texture_alias RGBMap2		31-surfaces2.png
+ 	set_texture_alias RGBMap3		31-shadow.png 
+	
+	set_texture_alias RMap1_DIF 31-asphalt.dds
+	set_texture_alias RMap1_NRM	31-rock_normalheight.dds
+	set_texture_alias GMap1_DIF texture.dds
+	set_texture_alias GMap1_NRM	texture.dds
+	set_texture_alias BMap1_DIF texture.dds
+	set_texture_alias BMap1_NRM	texture.dds
+	set_texture_alias RMap2_DIF texture.dds
+	set_texture_alias RMap2_NRM	texture.dds
+	set_texture_alias GMap2_DIF texture.dds
+	set_texture_alias GMap2_NRM	texture.dds
+	set_texture_alias BMap2_DIF texture.dds
+	set_texture_alias BMap2_NRM	texture.dds
+	set_texture_alias RMap3_DIF texture.dds
+	set_texture_alias RMap3_NRM	texture.dds
+	set_texture_alias GMap3_DIF texture.dds
+	set_texture_alias GMap3_NRM	texture.dds
+	set_texture_alias BMap3_DIF texture.dds
+	set_texture_alias BMap3_NRM	texture.dds
+	
+	set_texture_alias Color		  texture.dds
+}
+ 

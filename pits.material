@@ -1,0 +1,85 @@
+
+material 411/SOLID/TEX/BRICKS
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture pits-bricks.dds
+			}
+		}
+	}
+}
+material 410/SOLID/TEX/BITS
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture pits-BITS.dds
+			}
+		}
+	}
+}
+material 408/SOLID/TEX/roller_doors
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture pits-roller_doors.dds
+			}
+		}
+	}
+}
+material 413/SOLID/TEX/SHADOW
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+			alpha_rejection greater 0
+			depth_write off
+			texture_unit
+			{
+				texture pits-SHADOW.png
+			}
+		}
+	}
+}
+material 412/SOLID/TEX/ROOF
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture pits-ROOF.dds
+			}
+		}
+	}
+}
+material 547/SOLID/TEX/CHAINS
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+			alpha_rejection greater 0
+			depth_write off
+			texture_unit
+			{
+				texture pits-CHAINS.dds
+			}
+		}
+	}
+}

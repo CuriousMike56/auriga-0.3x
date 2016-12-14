@@ -1,0 +1,9 @@
+AurigaCrashTest01.mesh
+1, 1, 2
+
+beginmesh
+mesh AurigaCrashTest01.mesh
+stdfriction haybale
+endmesh
+
+end

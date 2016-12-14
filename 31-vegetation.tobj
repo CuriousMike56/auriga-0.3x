@@ -1,0 +1,7 @@
+
+//     range,SwaySpeed,SwayLen,SwayDistr,Density, minx,miny, maxx,maxy,fadetype,minY,maxY, material colormap densitymap 
+grass    600,      0.5,   0.05,       10,    1.0,  2.0, 0.5,  4.0, 1.0,       0,    0,  0, DesGrass4 31-grasscolor.png 31-grassdensity.png
+
+//trees yawFrom, yawTo, scaleFrom, scaleTo, highDensity, distance1, distance2, meshName colormap densitymap gridspacing collmesh
+trees 0, 360, 0.80, 1.90, 1.0, 250, 1200, LJTree04PagedGeo.mesh none 31-treedensity.png -2 31TreeColl40cm.mesh
+//trees 0, 360, 0.50, 1.90, 1.0, 250, 1200, 31RockColl1m.mesh none 31-rockdensity.png -2 31RockColl1m.mesh

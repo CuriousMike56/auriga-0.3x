@@ -1,0 +1,8 @@
+AurigaCrashTest03.mesh
+2, 1, 2
+
+beginmesh
+mesh AurigaCrashTest03.mesh
+endmesh
+
+end

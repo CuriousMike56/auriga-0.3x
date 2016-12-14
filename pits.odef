@@ -1,0 +1,22 @@
+pits.mesh
+1, 1, 1
+
+beginmesh
+mesh pits_coll.mesh
+endmesh
+
+beginbox
+boxcoords 0.5, 11, -0.5, 4.0, -2.5, 2.5
+virtual
+event shoptruck avatar
+endbox
+
+beginbox
+boxcoords 0.5, 11, 0.0, 4.0, -2.4, 2.4
+virtual
+event spawnzone
+direction 0, 0, 0
+endbox
+  
+
+end

@@ -1,0 +1,226 @@
+
+
+material 31-scenery
+{
+	technique
+	{
+		pass
+		{
+			fog_override true linear 0.6 0.7 0.8 0.0002 800 3000 
+			texture_unit 
+			{
+				texture 31-scenery-texture.dds
+			}
+		}
+	}
+}
+
+
+material AurigaTestTrack
+{
+	technique
+	{
+		pass
+		{
+			//cull_hardware none
+			//cull_software none
+			specular 0.05 0.05 0.05 0 10
+			texture_unit 
+			{
+				texture 31-asphalt_diffusespecular.dds
+			}
+			texture_unit
+            {
+				env_map cubic_reflection
+				cubic_texture AurigaCubicShadow.dds combinedUVW
+				colour_op_ex modulate_x2 src_current src_texture
+            }
+		}
+	}
+}
+
+material AurigaTestTrack2
+{
+	technique
+	{
+		pass
+		{
+			specular 0.05 0.05 0.05 0 10
+			texture_unit 
+			{
+				texture 31-mud_diffusespecular.dds
+			}
+		}
+	}
+}
+
+material AurigaTestTrackCobblestone
+{
+	technique
+	{
+		pass
+		{
+			specular 0.05 0.05 0.05 0 15
+			texture_unit 
+			{
+				texture 31-cobblestone.dds
+				scale 0.5 0.5
+			}
+			texture_unit
+            {
+				env_map cubic_reflection
+				cubic_texture AurigaCubicShadow.dds combinedUVW
+				colour_op_ex modulate_x2 src_current src_texture
+            }
+		}
+	}
+}
+
+material AurigaTestTrackRock
+{
+	technique
+	{
+		pass
+		{
+			specular 0.15 0.15 0.15 0 15
+			texture_unit 
+			{
+				texture 31-rock_diffusespecular.dds
+				//scale 1 2
+			}
+			texture_unit
+            {
+				env_map cubic_reflection
+				cubic_texture AurigaCubicShadow.dds combinedUVW
+				colour_op_ex modulate_x2 src_current src_texture
+            }
+		}
+	}
+}
+
+
+material AurigaCrashTest1
+{
+	technique
+	{
+		pass
+		{
+			specular 0.05 0.05 0.05 0 15
+			texture_unit 
+			{
+				texture 31-sand_diffusespecular.dds
+			}
+		}
+	}
+}
+
+material SlalomCone
+{
+	technique
+	{
+		pass
+		{
+			specular 0.2 0.2 0.2 0 20
+			texture_unit 
+			{
+				texture 31-orange.dds
+			}
+		}
+	}
+}
+
+material 31-decalwhite
+{
+	technique
+	{
+		pass
+		{
+			//depth_bias 5
+			//specular 0.1 0.1 0.1 0 10
+			texture_unit 
+			{
+				texture 31-decalwhite.dds
+			}
+		}
+	}
+}
+material 31-checkpoint-red
+{
+	technique
+	{
+		pass
+		{
+			specular 0.1 0.1 0.1 0 10
+			ambient 0.9 0.2 0.1
+			texture_unit 
+			{
+				texture 31-decalwhite.dds
+			}
+		}
+	}
+}
+
+material 31-checkpoint-white
+{
+	technique
+	{
+		pass
+		{
+			specular 0.1 0.1 0.1 0 10
+			ambient 0.1 0.8 0.2
+			texture_unit 
+			{
+				texture 31-decalwhite.dds
+			}
+		}
+	}
+}
+
+
+material 31WhiteLine
+{
+	technique
+	{
+		pass
+		{
+			specular 0.1 0.1 0.1 0 10
+			texture_unit 
+			{
+				texture 31-decalwhite.dds
+			}
+		}
+	}
+}
+
+
+material AurigaTestTrackIce
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+			specular 0.1 0.1 0.1 0 50
+			texture_unit 
+			{
+				texture 31-fresnel.dds
+				env_map spherical
+			}
+		}
+	}
+}
+
+material AngleTest
+{
+	technique
+	{
+		pass
+		{
+			texture_unit 
+			{
+				texture AngleTest.png
+			}
+		}
+	}
+}
+

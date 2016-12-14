@@ -1,0 +1,8 @@
+AurigaTestTrack02.mesh
+1, 1, 1
+
+beginmesh
+mesh AurigaTestTrack02.mesh
+endmesh
+
+end

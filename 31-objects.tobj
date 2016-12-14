@@ -1,0 +1,129 @@
+//scenery mesh
+256.0,-10.00, 256.0,  90,   0,   0, 31-scenery
+
+//static objects
+915, 8.8, 580, 0, 0, 0, opentruckshop sale Trucks
+990, 8.95,540, 0, 0, 0, pits sale Pits
+890, 8.8, 580, 0, 0, 0, load-spawner sale Loads
+
+360.0, 9.56, 290.0, 0, 0, 0, truckshop sale Garage
+340.0, 9.15, 216.0, 0, 0, 0, hangar sale Hangar
+
+760,10.00, 620, 0, 0, 0, truck KinematicsRig.fixed
+760, 9.00, 610, 0, 0, 0, truck AngleTest.fixed
+
+//random test objects
+980, 8.90, 490, 90, 0,  90, AurigaTestTrack02
+990, 8.95, 480, 90, 0, 270, AurigaTestTrack03
+995, 9.00, 470, 90, 0, 270, AurigaTestTrack07
+990, 9.00, 430, 90, 0,   0, AurigaTestTrack05
+980, 9.00, 450, 90, 0,   0, AurigaTestTrack06
+//single bumps
+500, 8.80, 543, 90, 0, 90, AurigaTestTrack09
+500, 8.80, 537, 90, 0, 90, AurigaTestTrack09
+500, 8.75, 534, 90, 0, 90, AurigaTestTrack09
+//belgian pave
+780, 8.90, 530, 90, 0, 90, AurigaTestTrack10
+760, 8.93, 530, 90, 0, 90, AurigaTestTrack10
+740, 8.96, 530, 90, 0, 90, AurigaTestTrack10
+720, 9.00, 530, 90, 0, 90, AurigaTestTrack10
+700, 8.96, 530, 90, 0, 90, AurigaTestTrack10
+//small uneven bumps
+760, 8.85, 543, 90, 0,270, AurigaTestTrack0191
+//medium uneven bumps
+760, 8.80, 548, 90, 0,270, AurigaTestTrack0192
+//large uneven bumps
+760, 8.80, 553, 90, 0,270, AurigaTestTrack0193
+//side slope
+760, 8.80, 563, 90, 0,270, AurigaTestTrack016
+//small even bumps
+660, 8.80, 543, 90, 0,270, AurigaTestTrack0211
+660, 8.80, 548, 90, 0,270, AurigaTestTrack0212
+//chassis twist
+660, 8.80, 553, 90, 0,270, AurigaTestTrack015
+
+//resonance bumps
+400.0, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+402.0, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+404.1, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+406.3, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+408.6, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+411.0, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+413.5, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+416.1, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+418.8, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+421.6, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+424.5, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+427.5, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+430.6, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+433.7, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+437.0, 8.75, 532, 90, 0, 90, AurigaTestTrack09
+
+//crash test barriers
+1000, 9.00, 580, 90, 0,  0, AurigaCrashTest01
+1000, 9.00, 570, 90, 0,  0, AurigaCrashTest02
+1000, 9.00, 560, 90, 0,  0, AurigaCrashTest03
+
+//braking distance test
+400.0,  9, 505,  90,   0, 270, 31BrakingDistance
+//slippery surface
+310.0,  9, 492, 270,   0, 270, 31FlatSurfaceIce
+
+//signs
+493.061, 8.03947, 904.506, 0,  77, 0, sign-rightturn
+//439.220, 9.80375, 815.861, 0,  10, 0, sign-leftturn
+//390.588, 17.7888, 794.544, 0, -20, 0, sign-rightturn
+//366.127, 20.5384, 831.832, 0, 148, 0, sign-rightturn
+335.291, 25.1518, 797.290, 0, -15, 0, sign-leftturn
+294.158, 26.7149, 789.222, 0, -15, 0, sign-rightturn
+134.563, 8.32829, 370.281, 0, -37, 0, sign-rightturn
+328.702, 8.69874, 324.668, 0,-115, 0, sign-leftturn
+398.386, 16.0777, 175.135, 0, -14, 0, sign-rightturn
+283.830, 27.5936, 765.413, 0, 159, 0, sign-rightturn
+
+//variable slalom, 15-35 m sections
+500.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+515.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+535.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+560.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+590.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+625.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+655.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+680.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+700.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+715.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+
+//600 foot slalom
+//500.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+//530.5,  9, 487.5,   0,   0,   0, load SlalomCone.load
+//561.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+//591.5,  9, 487.5,   0,   0,   0, load SlalomCone.load
+//622.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+//652.5,  9, 487.5,   0,   0,   0, load SlalomCone.load
+//683.0,  9, 487.5,   0,   0,   0, load SlalomCone.load
+
+//quarter mile, 402 m
+802.0,  9, 500,   0,   0,   0, load SlalomCone.load
+802.0,  9, 510,   0,   0,   0, load SlalomCone.load
+400.0,  9, 500,   0,   0,   0, load SlalomCone.load
+400.0,  9, 510,   0,   0,   0, load SlalomCone.load
+
+//1000 m
+ 10.0,  9, 500,   0,   0,   0, load SlalomCone.load
+ 10.0,  9, 510,   0,   0,   0, load SlalomCone.load
+1010,   9, 500,   0,   0,   0, load SlalomCone.load
+1010,   9, 510,   0,   0,   0, load SlalomCone.load
+
+//elk test
+700.0,  9, 522,   0,   0,   0, load SlalomCone.load
+700.0,  9, 527,   0,   0,   0, load SlalomCone.load
+680.0,  9, 522,   0,   0,   0, load SlalomCone.load
+680.0,  9, 527,   0,   0,   0, load SlalomCone.load
+650.0,  9, 522,   0,   0,   0, load SlalomCone.load
+650.0,  9, 524.5, 0,   0,   0, load SlalomCone.load
+650.0,  9, 527,   0,   0,   0, load SlalomCone.load
+650.0,  9, 532,   0,   0,   0, load SlalomCone.load
+620.0,  9, 522,   0,   0,   0, load SlalomCone.load
+620.0,  9, 527,   0,   0,   0, load SlalomCone.load
+600.0,  9, 522,   0,   0,   0, load SlalomCone.load
+600.0,  9, 527,   0,   0,   0, load SlalomCone.load

@@ -1,0 +1,9 @@
+31-checkpoint8m.mesh
+1, 1, 1
+
+beginbox
+boxcoords -4.0, 4.0, -5.0, 5.0, -0.00, 0.10
+virtual
+event checkpoint truck
+endbox
+end

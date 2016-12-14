@@ -1,0 +1,7 @@
+CorsicaCoast-heightmap.png
+5
+20, Cliffs02.jpg, Cliffs02_NRM.jpg, 0.90
+5, CorsicaCoast-sand_diffusespecular.dds, CorsicaCoast-sand_normalheight.dds, CorsicaCoast-surfaces2.png, R, 0.90
+4, CorsicaCoast-grass_diffusespecular.dds, CorsicaCoast-grass_normalheight.dds, CorsicaCoast-surfaces1.png, G, 0.80
+4, CorsicaCoast-gravel_diffusespecular.dds,CorsicaCoast-gravel_normalheight.dds, CorsicaCoast-surfaces1.png, R, 0.95
+4000, CorsicaCoast-Overlay.png, , CorsicaCoast-Red.png, R, 0.5

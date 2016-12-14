@@ -1,0 +1,9 @@
+31FlatSurface.mesh
+3, 0.1, 3
+
+beginmesh
+mesh 31FlatSurface.mesh
+stdfriction ice
+endmesh
+
+end
